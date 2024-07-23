@@ -103,10 +103,6 @@ npm start
 
 ---
 
-<p align="right"><a href="#top">Back to Top</a></p>
-
----
-
 <h3 align="center"> Give it a 🌟 if you love this repository </h3>
 
 ---
