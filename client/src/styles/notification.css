@@ -1,0 +1,36 @@
+@import url(app.css);
+
+.notif-section {
+  min-height: 70vh;
+  justify-content: flex-start;
+}
+
+.disable-btn {
+  cursor: no-drop;
+}
+
+.disable-btn:hover {
+  background-color: rgba(0, 128, 0, 0.528) !important;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 768px) {
+  .notif-section {
+    /* Adjust the min-height for smaller devices */
+    min-height: 50vh;
+  }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 480px) {
+  .notif-section {
+    /* Further adjust the min-height for very small devices */
+    min-height: 30vh;
+  }
+
+  .disable-btn {
+    /* Adjust button styles for mobile devices */
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}

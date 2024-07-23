@@ -1,0 +1,83 @@
+@import url(app.css);
+
+.hero {
+  display: flex;
+  height: 90vh;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+}
+
+.hero-img {
+  flex: 1;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 1024px) {
+  .hero,
+  .about {
+    width: 90%;
+  }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 770px) {
+  .hero {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .hero-content {
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    text-align: center;
+  }
+
+  .hero-img {
+    order: -1; /* Move image above the content */
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-heading {
+    margin-top: 4rem;
+  }
+}
+
+/* Additional media query for very small screens */
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem; /* Further reduce font size for very small screens */
+  }
+}

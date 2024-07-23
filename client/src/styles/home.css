@@ -1,0 +1,104 @@
+@import url(app.css);
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  /* Use viewport height (vh) with a correct unit */
+  height: 92vh;
+  overflow: hidden;
+}
+
+.hero-section > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+}
+
+.hero-section > .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.content > h1 {
+  font-size: 3rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.content > p {
+  font-size: 1.5rem;
+  color: var(--white);
+  text-align: center;
+  /* Make width responsive */
+  width: 80%;
+  max-width: 500px;
+}
+
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.cta-section > h2 {
+  font-size: 2rem;
+  color: var(--bold-text-color);
+}
+
+.cta-section > p {
+  font-size: 1.5rem;
+  color: var(--light-text-color);
+  text-align: center;
+  /* Make width responsive */
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 768px) {
+  .content > h1 {
+    font-size: 2.5rem;
+  }
+
+  .content > p,
+  .cta-section > p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 480px) {
+  .content > h1 {
+    font-size: 2rem;
+  }
+
+  .content > p,
+  .cta-section > p {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .cta-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}

@@ -1,0 +1,5 @@
+1. install Docker
+2. Pull Mongo Container `docker pull mongo`
+3. Run Mongo Container including username and password `docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb mongo`
+4. Now Mongo DB is running on `localhost:27017`
+5. Connect to Mongo DB using Mongo URI `mongodb://USERNAME:PASSWORD@localhost:27017/`

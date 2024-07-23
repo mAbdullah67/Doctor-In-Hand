@@ -1,0 +1,52 @@
+@import url(app.css);
+
+.apply-doctor-section {
+  margin: 0 auto;
+  width: 30%; /* Default width for larger screens */
+}
+
+.apply-doctor-container {
+  display: flex; /* Ensures flex properties are applied */
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+option {
+  text-transform: capitalize;
+}
+
+/* For screens up to 1200px */
+@media (max-width: 1200px) {
+  .apply-doctor-section {
+    width: 40%;
+  }
+}
+
+/* For screens up to 992px */
+@media (max-width: 992px) {
+  .apply-doctor-section {
+    width: 50%;
+  }
+}
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+  .apply-doctor-section {
+    width: 60%;
+  }
+}
+
+/* For screens up to 576px */
+@media (max-width: 576px) {
+  .apply-doctor-section {
+    width: 70%;
+  }
+}
+
+/* For screens up to 420px */
+@media (max-width: 420px) {
+  .apply-doctor-section {
+    width: 80%;
+  }
+}

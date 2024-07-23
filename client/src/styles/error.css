@@ -1,0 +1,32 @@
+@import url(app.css);
+
+.error {
+  display: flex;
+  flex-direction: column;
+  /* Use a percentage-based height for better responsiveness */
+  height: 90%;
+}
+
+.error h2 {
+  font-size: 3rem;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .error h2 {
+    /* Reduce font size on smaller screens */
+    font-size: 2rem;
+  }
+}
+
+/* Media query for screens smaller than 400px */
+@media (max-width: 400px) {
+  .error {
+    /* Adjust layout for very small screens */
+    height: auto;
+    padding: 20px;
+  }
+  .error h2 {
+    font-size: 1.5rem;
+  }
+}

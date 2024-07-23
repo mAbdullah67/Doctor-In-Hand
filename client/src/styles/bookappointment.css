@@ -1,0 +1,69 @@
+@import url(app.css);
+
+.modal {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 99vh;
+  z-index: 1;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 80%; /* Changed to a percentage to make it responsive */
+  max-width: 500px; /* Added a max-width for larger screens */
+  padding: 2rem;
+  border: 1px solid var(--light-blue);
+  border-radius: 10px;
+  color: var(--light-blue);
+  background-color: rgb(30, 55, 90);
+  position: relative;
+}
+
+.modal__content h2 {
+  color: var(--light-blue);
+}
+
+.modal__content .btn {
+  font-size: 0.9rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.book {
+  width: 80%;
+}
+
+/* Media Queries */
+
+/* For tablets */
+@media (min-width: 600px) {
+  .modal__content {
+    width: 60%;
+  }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 992px) {
+  .modal__content {
+    width: 40%;
+  }
+}
+
+/* For very large screens */
+@media (min-width: 1200px) {
+  .modal__content {
+    width: 30%;
+  }
+}

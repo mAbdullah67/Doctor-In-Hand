@@ -1,0 +1,62 @@
+@import url(app.css);
+
+.doctors {
+  margin-bottom: 5rem;
+}
+
+.doctors-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+  width: 100%;
+}
+
+.doctors-search {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* For screens up to 1200px */
+@media (max-width: 1200px) {
+  .doctors-search {
+    width: 40%;
+  }
+}
+
+/* For screens up to 992px */
+@media (max-width: 992px) {
+  .doctors-search {
+    width: 50%;
+  }
+}
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+  .doctors-card-container {
+    gap: 2rem; /* Reduce gap between cards */
+  }
+  
+  .doctors-search {
+    width: 60%;
+  }
+}
+
+/* For screens up to 576px */
+@media (max-width: 576px) {
+  .doctors-card-container {
+    gap: 1.5rem; /* Further reduce gap between cards */
+  }
+
+  .doctors-search {
+    width: 70%;
+  }
+}
+
+/* For screens up to 420px */
+@media (max-width: 420px) {
+  .doctors-search {
+    width: 80%;
+  }
+}

@@ -1,0 +1,7 @@
+Install node modules--npm i
+
+then start
+
+npm run start 
+or
+npm start
